@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Data
+time = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+surface_area = [10.0, 22.56, 60.24, 123.04, 210.96, 324.0, 462.16, 625.4, 813.8, 1027.4, 1266.0, 1529.8, 1818.6, 2132.6, 2471.8, 2836.0]
+
+# Plotting the graph
+plt.figure(figsize=(10, 6))
+plt.plot(time, surface_area, marker='o', linestyle='-', color='b', label='Surface Area')
+plt.title('Surface Area of Exercise Ball over Time')
+plt.xlabel('Time (s)')
+plt.ylabel('Surface Area (cm²)')
+plt.grid(True)
+plt.legend()
+plt.show()
